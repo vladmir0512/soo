@@ -3,21 +3,21 @@
 
 ### Заходим в виртуальную среду
 
-conda activate .env
+> conda activate .env
 
 ### Установка библиотек
 
 1. toxic.py
 
-pip install pandas 
+> pip install pandas 
 
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
+> conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-conda install -c conda-forge transformers
+> conda install -c conda-forge transformers
 
 2. TextAnalyzer.py
->>> import nltk
->>> nltk.download("stopword")
+> import nltk
+> nltk.download("stopword")
 
 3. filter.py
 
