@@ -44,8 +44,11 @@ for i in range (a):
     if text1[i]=="." or text1[i]=="-" or text1[i]=="?" or text1[i]=="!" or text1[i]=="...":
             text1[i]=""
 i=0
+print(1)
 while text1[i] != None :
+    print(2)
     if text1[i] =="":
+        print(3)
         text1.pop(i)
 
 for i in range (b):
