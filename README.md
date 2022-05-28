@@ -6,7 +6,7 @@
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
 Установка Docker Compose Ubuntu
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru
+https://docs.docker.com/compose/install/
 ### Установка библиотек
 
 1. toxic.py
