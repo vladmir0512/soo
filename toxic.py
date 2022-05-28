@@ -1,5 +1,7 @@
 # imports
 import pandas as pd
+pd.options.mode.chained_assignment = None  # default='warn'
+
 import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -26,7 +28,6 @@ def text2toxicity(text, aggregate=True):
         return 1 - proba.T[0] * (1 - proba.T[-1])
     return proba
 
-
 df.index = range(0, len(df))
 s = df['comment']
 sLength = len(s)
@@ -35,5 +36,6 @@ for i, val in enumerate(s):
     df['Toxic'][i] = text2toxicity(val, True)
 df.loc[(df['Toxic'] >= 0.5), 'Toxic'] = 1
 df.loc[(df['Toxic'] < 0.5), 'Toxic'] = 0
-
+	
 df.to_csv('m_.csv', index=False)
+
