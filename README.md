@@ -28,5 +28,5 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-c
 5. parcing.py
 
 6. nn.py
-
-
+> pip install sklearn
+> pip install lightautoml
