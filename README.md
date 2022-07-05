@@ -32,3 +32,6 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-c
 > pip install matplotlib
 > pip install sklearn
 > pip install lightautoml
+> pip install gensim
+> pip install nltk
+
