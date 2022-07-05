@@ -29,7 +29,6 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-c
 
 6. nn.py
 > pip install pandas 
-
 > pip install matplotlib
 
 > pip install sklearn
