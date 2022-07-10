@@ -1,7 +1,7 @@
 # Система оценки мнений
 Система мнений
 
-### Установка Docker Ubuntu
+Установка Docker Ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
 
@@ -10,19 +10,19 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
 # Установка базы данных PostgreSQL через Docker
 
-### Загрузка образа postgresql из репозитория 
+Загрузка образа postgresql из репозитория 
 > docker pull postgres
 
 
 
 
-### Запуск контейнера с бд
+Запуск контейнера с бд
 > docker run --name multiverse -p 5477:5432 -e POSTGRES_DB=c137 -e POSTGRES_USER=rick -e POSTGRES_PASSWORD=plumbus -d postgres
 
 
 
 
-### Данные:
+Данные:
 host "172.0.0.2"
 
 port "5432"
@@ -39,13 +39,13 @@ password "plumbus"
 
 
 # Установка pgAdmin 4 Web (если нужно)
-### Загрузка образа pgAdmin из репозитория 
+Загрузка образа pgAdmin из репозитория 
 > docker pull dpage/pgadmin4
 
 
 
 
-### Запуск контейнера с бд
+Запуск контейнера с бд
 > docker run --name pg_dashboard -p 5488:80 -e PGADMIN_DEFAULT_EMAIL=rick@sanchez.com -e PGADMIN_DEFAULT_PASSWORD=pickleriick -d dpage/pgadmin4
 
 Here you can log into the pgAdmin4 using the above "email" and "password":
