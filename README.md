@@ -5,38 +5,47 @@
 Установка Docker Ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
-Установка Docker Compose Ubuntu
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru
+###
+Установка базы данных PostgreSQL через Docker
+
+# Загрузка образа postgresql из репозитория 
+> docker pull postgres
+
+# Запуск контейнера с бд
+> docker run --name multiverse -p 5477:5432 -e POSTGRES_DB=c137 -e POSTGRES_USER=rick -e POSTGRES_PASSWORD=plumbus -d postgres
+
+# Данные:
+host "172.0.0.2"
+
+port "5432"
+
+maintenance database "c137"
+
+username "rick"
+
+password "plumbus"
+
+###
+Установка pgAdmin 4 Web (если нужно)
+# Загрузка образа pgAdmin из репозитория 
+> docker pull dpage/pgadmin4
+
+
+# Запуск контейнера с бд
+> docker run --name pg_dashboard -p 5488:80 -e PGADMIN_DEFAULT_EMAIL=rick@sanchez.com -e PGADMIN_DEFAULT_PASSWORD=pickleriick -d dpage/pgadmin4
+
+Here you can log into the pgAdmin4 using the above "email" and "password":
+- "rick@sanchez.com"
+- "pickleriick"
+
+
 ### Установка библиотек
 
 1. toxic.py
 
 > pip install pandas 
 
-> conda install pytorch torchvision torchaudio cpuonly -c pytorch
+> pip install transformers[torch]
 
-> conda install -c conda-forge transformers
-
-2. TextAnalyzer.py
-> import nltk
-> nltk.download("stopword")
-
-3. filter.py
-
-4. split.py
-
-5. parcing.py
-
-6. nn.py
-> pip install pandas 
-
-> pip install matplotlib
-
-> pip install sklearn
-
-> pip install lightautoml
-
-> pip install gensim
-
-> pip install nltk
+2. parcing.py
 
