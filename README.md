@@ -1,12 +1,10 @@
 # Система оценки мнений
 Система мнений
 
-###
-Установка Docker Ubuntu
+### Установка Docker Ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
-###
-Установка базы данных PostgreSQL через Docker
+### Установка базы данных PostgreSQL через Docker
 
 # Загрузка образа postgresql из репозитория 
 > docker pull postgres
@@ -25,8 +23,7 @@ username "rick"
 
 password "plumbus"
 
-###
-Установка pgAdmin 4 Web (если нужно)
+### Установка pgAdmin 4 Web (если нужно)
 # Загрузка образа pgAdmin из репозитория 
 > docker pull dpage/pgadmin4
 
