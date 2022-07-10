@@ -13,8 +13,14 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 ### Загрузка образа postgresql из репозитория 
 > docker pull postgres
 
+
+
+
 ### Запуск контейнера с бд
 > docker run --name multiverse -p 5477:5432 -e POSTGRES_DB=c137 -e POSTGRES_USER=rick -e POSTGRES_PASSWORD=plumbus -d postgres
+
+
+
 
 ### Данные:
 host "172.0.0.2"
@@ -35,6 +41,8 @@ password "plumbus"
 # Установка pgAdmin 4 Web (если нужно)
 ### Загрузка образа pgAdmin из репозитория 
 > docker pull dpage/pgadmin4
+
+
 
 
 ### Запуск контейнера с бд
