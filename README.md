@@ -68,3 +68,7 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 
 ### 2. parcing.py
 
+# Парсинг данных груп вк:
+* Риа
+* ТАСС
+* Регнум
