@@ -67,11 +67,12 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 >
 > apt-get -y install nano (нано нужно, без него никуда)
 
+команды для правильного запуска скриптов, с сохранением логов
 
 > python3 parsing.py > parsing_logs/log.log 2> parsing_logs/error.log &
 > 
 > python3 toxic.py > toxic_logs/log.log 2> toxic_logs/error.log &
-команды для правильного запуска скриптов, с сохранением логов
+
 
 ### 1. toxic.py
 
