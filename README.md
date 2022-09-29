@@ -83,6 +83,7 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 ### 2. parcing.py
 
 > pip install vk_api
+> 
 > pip install psycopg2 (если не сработало, то pip install psycopg2-binary)
 
 # Парсинг данных групg VK:
