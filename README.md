@@ -19,6 +19,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 Запуск контейнера с бд
 > docker run --name multiverse -p 5477:5432 -e POSTGRES_DB=c137 -e POSTGRES_USER=rick -e POSTGRES_PASSWORD=plumbus -d postgres
 
+> docker run --name multiverse --ip 172.17.0.4 --restart=always -p 5477:5432 -e POSTGRES_DB=c137 -e POSTGRES_USER=rick -e POSTGRES_PASSWORD=plumbus -d multiverse_with_scritpts
+*(больше параметров, не совсем свежийmultiverse)
 
 
 
