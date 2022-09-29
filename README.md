@@ -23,7 +23,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
 
 Данные:
-host "172.17.0.3" (проверить через docker inspect multiverse | grep IPAddress )
+host "172.17.0.4" (проверить через docker inspect multiverse | grep IPAddress )
 
 port "5432"
 
