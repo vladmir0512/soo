@@ -59,6 +59,16 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 
 
 # Установка библиотек
+### 0. Весь контейнер
+(сюда напиши команды для установки питона и пипа)
+>apt install nano
+>apt-get update
+>apt-get -y install nano (нано нужно, без него никуда)
+
+
+> python3 parsing.py > parsing_logs/log.log 2> parsing_logs/error.log &
+> python3 toxic.py > toxic_logs/log.log 2> toxic_logs/error.log &
+команды для правильного запуска скриптов, с сохранением логов
 
 ### 1. toxic.py
 
@@ -67,6 +77,9 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 > pip install transformers[torch]
 
 ### 2. parcing.py
+
+> pip install vk_api
+> pip install psycopg2 (если не сработало, то pip install psycopg2-binary)
 
 # Парсинг данных групg VK:
 * Риа
