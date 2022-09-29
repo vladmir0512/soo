@@ -91,5 +91,6 @@ Here you can log into the pgAdmin4 using the above "email" and "password":
 * ТАСС
 * Регнум
 ### 3. В контейнере с веб приложением выполнить программу
-import nltk
-nltk.download('stopwords')
+> import nltk
+> 
+> nltk.download('stopwords')
